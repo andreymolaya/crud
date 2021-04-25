@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html CRUD with Pure JavaScript</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <table style="background-color: white;">
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Brand</label><label class="validation-error hide" id="fullBrandValidationError">This
+                                field is required.</label>
+                            <input type="text" name="Brand" id="Brand">
+                        </div>
+                        <div>
+                            <label>Model</label>
+                            <input type="text" name="Model" id="Model">
+                        </div>
+                        <div>
+                            <label>Color</label>
+                            <input type="text" name="Color" id="Color">
+                        </div>
+                        <div>
+                            <label>Year</label>
+                            <input type="number" name="year" id="year">
+                        </div>
+                        <div>
+                            <label>Price</label>
+                            <input type="number" name="Price" id="Price">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Color</th>
+                                <th>year</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
